@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        main {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        .products {
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .products h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        td img.product-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 1rem;
+        }
+
+        td p {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        td button {
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        td button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.9rem;
+            }
+
+            .products h1 {
+                font-size: 1.8rem;
+            }
+
+            td {
+                display: block;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            td img.product-image {
+                margin: 0 auto;
+                display: block;
+                width: 80px;
+                height: 80px;
+            }
+
+            td p {
+                font-size: 0.9rem;
+            }
+
+            td button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ShopEasy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="offers.html">Offers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h1>Our Products</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="media/headphone.avif" alt="Sony XM4 Wireless Headphones" class="product-image">
+                            <p>Wireless Headphones</p>
+                        </td>
+                        <td>High-quality sound with noise cancellation.</td>
+                        <td>$50</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="media/s24.webp" alt="S24 Ultra Case" class="product-image">
+                            <p>Smartphone Case</p>
+                        </td>
+                        <td>Durable and stylish case for smartphones.</td>
+                        <td>$15</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="media/fitnesstracker.jpeg" alt="Fitness Tracker" class="product-image">
+                            <p>Fitness Tracker</p>
+                        </td>
+                        <td>Track your health and activity easily.</td>
+                        <td>$100</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="media/beats.jpeg" alt="Beats Speaker" class="product-image">
+                            <p>Bluetooth Speaker</p>
+                        </td>
+                        <td>Portable speaker with deep bass and clear sound.</td>
+                        <td>$40</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="media/UltraWatch.png" alt="Samsung Watch Ultra" class="product-image">
+                            <p>Smartwatch</p>
+                        </td>
+                        <td>Advanced features with sleek design.</td>
+                        <td>$150</td>
+                        <td><button>Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

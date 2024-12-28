@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .content-wrapper {
+            margin: 2rem;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        .faq h2 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .faq p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .faq a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ShopEasy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="offers.html">Offers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <main>
+            <section class="faq">
+                <h1>Frequently Asked Questions</h1>
+
+                <div class="faq-item">
+                    <h2>1. How can I track my order?</h2>
+                    <p>You can track your order using the tracking link provided in your order confirmation email.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h2>2. What is the return policy?</h2>
+                    <p>We offer a 30-day return policy. Please ensure the item is in its original condition.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h2>3. Do you offer international shipping?</h2>
+                    <p>Yes, we ship to most countries. Shipping fees and times may vary.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h2>4. How can I contact customer support?</h2>
+                    <p>You can reach us via the <a href="contact.html">Contact Us</a> page.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
